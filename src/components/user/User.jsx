@@ -16,18 +16,20 @@ const User = () => {
 
     },[])
   return (
-    <div className='container wrapper'>
-        {error && <div style={{color:"red"}}>{error?.message}</div>}
-        {loading && <div>Loading...</div>}
-        {
-            data?.map((item)=>(
-                <div key={item.id} className="card">
-                    <h3>{item.name}</h3>
-                    <p><b>Email:</b>{item.email}</p>
-                    <span><b>Bio:</b>{item.bio}</span>
-                </div>
-            ))
-        }
+    <div className='user'>
+        <div className='container wrapper'>
+            {error && <div style={{color:"red"}}>{error?.message}</div>}
+            {loading && <div>Loading...</div>}
+            {
+                data?.map((item)=>(
+                    <div key={item.id} className="card">
+                        <h3>{item.name}</h3>
+                        <p><b>Email:</b>{item.email}</p>
+                        <span><b>Bio:</b>{item.bio}</span>
+                    </div>
+                ))
+            }
+        </div>
     </div>
   )
 }

@@ -16,6 +16,7 @@ const User = () => {
 
     }, [])
     return (
+        <div className='post'>
         <div className='container post-wrapper'>
             {error && <div style={{ color: "red" }}>{error?.message}</div>}
             {loading && <div>Loading...</div>}
@@ -29,6 +30,7 @@ const User = () => {
                     </div>
                 ))
             }
+        </div>
         </div>
     )
 }

@@ -1,37 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 .container{
   max-width: 1280px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+.user,
+.product,
+.post{
+  background-color: #333;
+}
+
+.header,
+.footer{
+  background-color: #EEEEEE;
+  
+
+}
+.header-wrapper,
+.footer-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.header-img img{
+  display: flex;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+
+
+}
+.header-nav ul li{
+  display:inline-block;
+  margin: 10px 30px;
+}
+.header-btn button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #777;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+
+
+.footer-logo img{
+  display: flex;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.footer-aloqa{
+  display: flex;
+  gap:80px;
+  margin-bottom: 10px;
+}
+li{
+  list-style: none;
+  margin: 5px 0;
+}
+.icon{
+  display: flex;
+  gap: 10px;
+}
+
 :root{
   --card:4
 }
 .wrapper{
   width: 100%;
-  background-color: blue;
   display: grid;
   grid-template-columns: repeat(var(--card),1fr);
   gap: 10px;
   padding: 30px;
   border-radius: 10px;
-
 }
 .post-wrapper{
   width: 100%;
-  margin-top: 30px;
-  background-color: #00ff1e;
   display: grid;
   grid-template-columns: repeat(var(--card), 1fr);
   gap: 10px;
   padding: 30px;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 .product-wrapper{
   width: 100%;
-    margin-top: 30px;
-    background-color: #d400ff;
     display: grid;
     grid-template-columns: repeat(var(--card), 1fr);
     gap: 10px;

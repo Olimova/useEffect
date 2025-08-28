@@ -16,6 +16,7 @@ const User = () => {
 
     }, [])
     return (
+        <div className='product'>
         <div className='container product-wrapper'>
             {error && <div style={{ color: "red" }}>{error?.message}</div>}
             {loading && <div>Loading...</div>}
@@ -32,6 +33,7 @@ const User = () => {
                     </div>
                 ))
             }
+        </div>
         </div>
     )
 }
